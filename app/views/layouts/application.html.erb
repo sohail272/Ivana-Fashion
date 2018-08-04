@@ -6,7 +6,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
   <body id="page-top">
     <%=render partial: 'shared/navigation_bar' %>
-    <%#=render partial: 'shared/messages' %>
+    <%=render partial: 'shared/messages' %>
     <div id="layout_body" >
       <%= yield %>
     </div>
