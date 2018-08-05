@@ -1,0 +1,23 @@
+ .login_box {
+  .login_box_padding {
+    padding-top: 7pc;
+    @media(max-width: 991px) {
+      padding: 7pc 7pc 0pc 7pc;
+    }
+    @media(max-width: 500px) {
+      padding: 7pc 2pc 0pc 2pc;
+    }
+  }
+ }
+
+.signup_box {
+  .signup_box_padding {
+    padding-top: 7pc;
+    @media(max-width: 991px) {
+      padding: 7pc 7pc 0pc 7pc;
+    }
+    @media(max-width: 500px) {
+      padding: 7pc 2pc 0pc 2pc;
+    }
+  }
+ }

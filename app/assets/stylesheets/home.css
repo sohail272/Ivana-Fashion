@@ -102,8 +102,19 @@ img::-moz-selection {
   background: transparent;
 }
 
+.alert-timedout {
+  display: none;
+}
+
 #mainNav {
-  background-color: #212529;
+  background-color: #212529 !important;
+  position: fixed !important;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #e1e5e7;
+  background: #f6f9f9;
+  height: 60px;
+  z-index: 200;
 }
 
 #mainNav .navbar-toggler {
