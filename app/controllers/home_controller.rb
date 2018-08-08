@@ -1,7 +1,12 @@
 class HomeController < ApplicationController
-  #skip_before_action :authenticate_user!, only: [:index]
 
   def index
+  end
+
+  def about_us
+  end
+
+  def contact_us
   end
 
 end

@@ -1,0 +1,22 @@
+.about_us {
+
+  .header_image {
+    background-image:url(asset-path("about/about_banner.jpg"));
+    margin-top: 59px;
+    height: 27pc;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  p {
+    padding-top: 10px;
+  }
+}
