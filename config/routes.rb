@@ -57,6 +57,8 @@ Rails.application.routes.draw do
   # end
 
 
+  get "/products", to: 'products#index', as: 'products'
+
   # Home Controller
   get '/about-us', to: 'home#about_us', as: 'about_us'
   get '/contact-us', to: 'home#contact_us', as: 'contact_us'
