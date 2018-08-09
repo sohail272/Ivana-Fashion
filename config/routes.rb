@@ -57,7 +57,17 @@ Rails.application.routes.draw do
   # end
 
 
-  get "/products", to: 'products#index', as: 'products'
+  #get "/products", to: 'products#index', as: 'products'
+
+  resources :products, only: [:index], path: '/products' do
+    collection do
+      
+    end
+  end
+  #resources :enquiries, only: :create
+  match '/products/:id' => 'products#show', as: 'product', via: [:get, :post]
+
+
 
   # Home Controller
   get '/about-us', to: 'home#about_us', as: 'about_us'
