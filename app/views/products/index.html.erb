@@ -9,205 +9,152 @@
             <li>Collections</li>
           </ul>
         </div>
-        <div class="col-md-3 pull-left" id="sidebar">
-          <div class="list-group panel">
-            <!--product-->
+        <%= form_tag(products_path, method: :get) do %>
+          <div class="col-md-3 pull-left" id="sidebar">
+            <div class="list-group panel">
+              <!--product-->
+              <div class="panel panel-default sidebar-menu">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Collections</h3>
+                </div>
+                <div class="panel-body">
+                  <ul class="nav nav-pills nav-stacked category-menu">
+                    <li class ="act">
+                      <a  onclick="menuClick(0)">Categories <span class="badge pull-right">12</span></a>
+                      <ul class = "click" >
+                        <li><a href="category.html">Kurta Sets</a>
+                        </li>
+                        <li><a href="category.html">Saris</a>
+                        </li>
+                        <li><a href="category.html">Lehangas</a>
+                        </li>
+                        <li><a href="category.html">Trunics & Kurtis</a>
+                        </li>
+                        <li><a href="category.html">Gowns</a>
+                        </li>
+                        <li><a href="category.html">Dresses</a>
+                        </li>
+                        <li><a href="category.html">Tops</a>
+                        </li>
+                        <li><a href="category.html">Capes</a>
+                        </li>
+                        <li><a href="category.html">Jumpsuits</a>
+                        </li>
+                        <li><a href="category.html">Pants</a>
+                        </li>
+                        <li><a href="category.html">Skirts</a>
+                        </li>
+                        <li><a href="category.html">Jackets</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class ="act">
+                      <a onclick="menuClick(1)">Occasions  <span class="badge pull-right">11</span></a>
+                      <ul  class = "click"  >
+                        <li><a href="">Engagement</a>
+                        </li>
+                        <li><a href="category.html">Mehndi</a>
+                        </li>
+                        <li><a href="category.html">Sangeet</a>
+                        </li>
+                        <li><a href="category.html">Cocktail</a>
+                        </li>
+                        <li><a href="">Wedding</a>
+                        </li>
+                        <li><a href="category.html">Reception</a>
+                        </li>
+                        <li><a href="category.html">Pooja</a>
+                        </li>
+                        <li><a href="category.html">Brunch</a>
+                        </li>
+                        <li><a href="">Evening</a>
+                        </li>
+                        <li><a href="category.html">Resort wedding</a>
+                        </li>
+                        <li><a href="category.html">Bridal Trusseau</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class ="act">
+                      <a onclick="menuClick(2)">Hotest Trends <span class="badge pull-right">9</span></a>
+                      <ul class = "click">
+                        <li><a href="category.html">Jewel Tones</a>
+                        </li>
+                        <li><a href="category.html">Amazon Fasion week</a>
+                        </li>
+                        <li><a href="category.html">Traditional Tie & Dye</a>
+                        </li>
+                        <li><a href="category.html">Blossomed beauty</a>
+                        </li>
+                        <li><a href="category.html">Sensational Silk</a>
+                        </li>
+                        <li><a href="category.html">Draped Dresses</a>
+                        </li>
+                        <li><a href="category.html">Simply Stylish For Pujas</a>
+                        </li>
+                        <li><a href="category.html">Lehnga Love</a>
+                        </li>
+                        <li><a href="category.html">Pant SarisShimmer & Sequins</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--product-->
+            </div>
+            <!-- Brands -->
             <div class="panel panel-default sidebar-menu">
               <div class="panel-heading">
-                <h3 class="panel-title">Collections</h3>
+                <h3 class="panel-title">Brands <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>
               </div>
               <div class="panel-body">
-                <ul class="nav nav-pills nav-stacked category-menu">
-                  <li class ="act">
-                    <a  onclick="menuClick(0)">Categories <span class="badge pull-right">12</span></a>
-                    <ul class = "click" >
-                      <li><a href="category.html">Kurta Sets</a>
-                      </li>
-                      <li><a href="category.html">Saris</a>
-                      </li>
-                      <li><a href="category.html">Lehangas</a>
-                      </li>
-                      <li><a href="category.html">Trunics & Kurtis</a>
-                      </li>
-                      <li><a href="category.html">Gowns</a>
-                      </li>
-                      <li><a href="category.html">Dresses</a>
-                      </li>
-                      <li><a href="category.html">Tops</a>
-                      </li>
-                      <li><a href="category.html">Capes</a>
-                      </li>
-                      <li><a href="category.html">Jumpsuits</a>
-                      </li>
-                      <li><a href="category.html">Pants</a>
-                      </li>
-                      <li><a href="category.html">Skirts</a>
-                      </li>
-                      <li><a href="category.html">Jackets</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class ="act">
-                    <a onclick="menuClick(1)">Occasions  <span class="badge pull-right">11</span></a>
-                    <ul  class = "click"  >
-                      <li><a href="">Engagement</a>
-                      </li>
-                      <li><a href="category.html">Mehndi</a>
-                      </li>
-                      <li><a href="category.html">Sangeet</a>
-                      </li>
-                      <li><a href="category.html">Cocktail</a>
-                      </li>
-                      <li><a href="">Wedding</a>
-                      </li>
-                      <li><a href="category.html">Reception</a>
-                      </li>
-                      <li><a href="category.html">Pooja</a>
-                      </li>
-                      <li><a href="category.html">Brunch</a>
-                      </li>
-                      <li><a href="">Evening</a>
-                      </li>
-                      <li><a href="category.html">Resort wedding</a>
-                      </li>
-                      <li><a href="category.html">Bridal Trusseau</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class ="act">
-                    <a onclick="menuClick(2)">Hotest Trends <span class="badge pull-right">9</span></a>
-                    <ul class = "click">
-                      <li><a href="category.html">Jewel Tones</a>
-                      </li>
-                      <li><a href="category.html">Amazon Fasion week</a>
-                      </li>
-                      <li><a href="category.html">Traditional Tie & Dye</a>
-                      </li>
-                      <li><a href="category.html">Blossomed beauty</a>
-                      </li>
-                      <li><a href="category.html">Sensational Silk</a>
-                      </li>
-                      <li><a href="category.html">Draped Dresses</a>
-                      </li>
-                      <li><a href="category.html">Simply Stylish For Pujas</a>
-                      </li>
-                      <li><a href="category.html">Lehnga Love</a>
-                      </li>
-                      <li><a href="category.html">Pant SarisShimmer & Sequins</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <div class="form-group">
+                  <div class="checkbox">
+                    <% @brands.each do |brand| %>
+                      <label>
+                        <%# byebug %>
+                        <% brand_checked = params[:brands].include? brand.name if params[:brands].present? %>
+                        <%= check_box_tag "brands[]", brand.name, brand_checked %>
+                        <%= brand.name %>
+                      </label>
+                    <br>
+                    <% end %> 
+                  </div>
+                </div>
+                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
               </div>
             </div>
-            <!--product-->
-          </div>
-          <!-- Brands -->
-          <div class="panel panel-default sidebar-menu">
-            <div class="panel-heading">
-              <h3 class="panel-title">Brands <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>
-            </div>
-            <div class="panel-body">
-              <form>
+            <!-- Brands -->
+            <!--Colors-->
+            <div class="panel panel-default sidebar-menu">
+              <div class="panel-heading">
+                <h3 class="panel-title">Colours <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>
+              </div>
+              <div class="panel-body">
                 <div class="form-group">
                   <div class="checkbox">
-                    <label>
-                    <input type="checkbox">Armani (10)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox">Versace (12)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox">Carlo Bruni (15)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox">Jack Honey (14)
-                    </label>
+                    <% @colors.each do |color| %>
+                      <label>
+                        <%# byebug %>
+                        <% color_checked = params[:colors].include? color.name if params[:colors].present? %>
+                        <%= check_box_tag "colors[]", color.name, color_checked %>
+                        <%= color.name %>
+                      </label>
+                    <br>
+                    <% end %> 
                   </div>
                 </div>
                 <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
-              </form>
+              </div>
             </div>
+            <!--colors-->
           </div>
-          <!-- Brands -->
-          <!--Colors-->
-          <div class="panel panel-default sidebar-menu">
-            <div class="panel-heading">
-              <h3 class="panel-title">Colours <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> Clear</a></h3>
-            </div>
-            <div class="panel-body">
-              <form>
-                <div class="form-group">
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox"> <span class="colour white"></span> White (14)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox"> <span class="colour blue"></span> Blue (10)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox"> <span class="colour green"></span> Green (20)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox"> <span class="colour yellow"></span> Yellow (13)
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox"> <span class="colour red"></span> Red (10)
-                    </label>
-                  </div>
-                </div>
-                <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
-              </form>
-            </div>
-          </div>
-          <!--colors-->
-        </div>
+        <% end %>
         <div class="col-md-9 pull-left">
           <div class="box">
             <h1>Collections</h1>
             <p>In our Collections department we offer wide selection of the best products we have found and carefully selected worldwide.</p>
-          </div>
-          <div class="box info-bar">
-            <div class="row">
-              <div class="col-sm-12 col-md-4 products-showing">
-                Showing <strong>12</strong> of <strong>25</strong> products
-              </div>
-              <div class="col-sm-12 col-md-8  products-number-sort">
-                <div class="row">
-                  <form class="form-inline">
-                    <div class="col-md-6 col-sm-6">
-                      <div class="products-number">
-                        <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                      <div class="products-sort-by">
-                        <strong>Sort by</strong>
-                        <select name="sort-by" class="form-control">
-                          <option>Price</option>
-                          <option>Name</option>
-                          <option>Sales first</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="row products">
             <% @products.each do |product|%>
@@ -246,26 +193,8 @@
             <% end %>
           </div>
           <!-- /.products -->
-          <div class="pages">
-            <p class="loadMore">
-              <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-chevron-down"></i> Load more</a>
-            </p>
-            <ul class="pagination">
-              <li><a href="#">«</a>
-              </li>
-              <li class="active"><a href="#">1</a>
-              </li>
-              <li><a href="#">2</a>
-              </li>
-              <li><a href="#">3</a>
-              </li>
-              <li><a href="#">4</a>
-              </li>
-              <li><a href="#">5</a>
-              </li>
-              <li><a href="#">»</a>
-              </li>
-            </ul>
+          <div class="pull-right digg_pagination">
+            <%= will_paginate @products if @products %> 
           </div>
         </div>
       </div>
