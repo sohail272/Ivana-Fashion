@@ -66,6 +66,8 @@ Rails.application.routes.draw do
   end
   #resources :enquiries, only: :create
   match '/products/:id' => 'products#show', as: 'product', via: [:get, :post]
+  get 'home/cart'
+  get 'home/checkout'
 
 
 

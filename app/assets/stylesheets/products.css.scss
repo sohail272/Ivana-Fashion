@@ -1,9 +1,24 @@
+html {
+      font-size: 10px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    body {
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333333;
+      background-color: #f0f0f0;
+    } 
+    #content 
+    .panel.sidebar-menu ul.nav.category-menu {
+      margin-bottom: 20px;
+    }
 .breadcrumb {
-margin-bottom:20px;
-list-style:none;
-background-color:#fff;
-border-radius:4px;
-padding:8px 15px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 4px;
 }
 
 #content .panel.sidebar-menu ul.nav ul li a:hover,#content .panel.sidebar-menu ul.nav ul li a:focus {
@@ -413,4 +428,223 @@ margin-bottom:20px;
     height: 1%
   *:first-child+html &
     overflow: hidden*/
+
 }
+ /*test show.css*/
+    .product-name h2.product-name {
+            margin: 0;
+            font-weight:400; 
+            font: normal normal normal 50px/62px dinneuzeitgroteskltw01-_812426,sans-serif;
+    }
+    .product-name {
+        font-size: 26px;
+        line-height: 1.2em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    button{
+          height: 12%;
+           width: 100%;
+    }
+    select{
+      width: 100%;height: 12%;background-color: #de8233; border-radius: 5px;
+    }
+   
+    .txt{
+       font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333333;
+    }
+    /*test*/
+    /*cart*/
+        html {
+      font-size: 10px;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    body {
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333333;
+      background-color: #f0f0f0;
+    } 
+    .breadcrumb {
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      list-style: none;
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+    #content 
+    .panel.sidebar-menu ul.nav.category-menu {
+      margin-bottom: 20px;
+    }
+    .col-md-9 {
+      width: 75%;
+    }
+    .box {
+      background: #fff;
+      margin: 0 0 30px;
+      border: solid 1px #e6e6e6;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 20px;
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .box .box-header {
+      background: #f7f7f7;
+      margin: -20px -20px 20px;
+      padding: 20px;
+      border-bottom: solid 1px #eeeeee;
+    }
+    form {
+      display: block;
+      margin-top: 0em;
+    }
+    h1, .h1, h2, .h2, h3, .h3 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      display: block;
+      font-size: 2em;
+      -webkit-margin-before: 0.67em;
+      -webkit-margin-after: 0.67em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      font-weight: bold;
+    }
+    .text-muted {
+      color: #777;
+    }
+    p, ul, ol {
+      margin: 0 0 20px;
+    }
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    p {
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+    }
+    .table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      
+    }
+    table {
+      background-color: transparent;
+          display: table;
+        
+        
+        border-color: grey;
+        border-collapse: collapse;
+          border-spacing: 0;
+    }
+    thead {
+      display: table-header-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    tbody {
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    tr {
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+    }
+    .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
+      border-top: 0;
+    }
+    .table>thead>tr>th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #ddd;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+    th {
+      text-align: left;
+      font-weight: bold;
+    }
+    td, th {
+      display: table-cell;
+      vertical-align: inherit;
+    }
+    #content #checkout .table tbody tr td, #content #basket .table tbody tr td, #content #customer-order .table tbody tr td {
+      vertical-align: middle;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+    #content #checkout .table tfoot, #content #basket .table tfoot, #content #customer-order .table tfoot {
+      font-size: 18px;
+    }
+    tfoot {
+      display: table-footer-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    .box .box-footer {
+      padding: 20px;
+      border-top: solid 1px #eeeeee;
+    }
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .btn-primary {
+      color: #ffffff;
+      background-color: #4fbfa8;
+      border-color: #41b39c;
+    }
+    /*cart*/
+    /*address*/
+
+      li.active {
+           position: relative;
+          display: block;
+          width: 25%;
+              background-color: #659a9c;
+                  border-radius: 10px;
+  }
+  li.disabled{
+     position: relative;
+          display: block;
+          width: 25%;
+              background-color: #f7f9fb;
+                  border-radius: 10px;
+                 
+  }
+  a.activeLink{
+      color: black;
+          padding-left: 50px
+  }
+  a.link{
+      color: black;
+          padding-left: 50px
+  }
+  .nav{
+        margin-bottom: 2%!important;
+  }
+    /*address*/  
+  

@@ -9,4 +9,10 @@ class HomeController < ApplicationController
   def contact_us
   end
 
+  def cart
+  end
+
+   def checkout
+  end
+
 end
