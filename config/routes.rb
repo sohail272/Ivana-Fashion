@@ -23,6 +23,30 @@ Rails.application.routes.draw do
       put '/update' => 'admins/registrations#update', :as => 'registration'   
     end
   end
+
+  scope module: "admins" do
+    resources :admins do
+      resources :products, only: [:index, :show, :edit, :new, :create, :update] do
+        # member do
+        #   get :download_slip
+        # end
+        # collection do
+        #   get :export 
+        # end
+      end
+      # resources :users, only: [:show, :index , :edit, :update]
+      # resources :roles
+      # resources :organizations
+      # resources :plans, except: [:destroy]
+      # resources :countries, only: [:index] do 
+      #   collection do 
+      #     put :sanctioned
+      #     get :edit_sanctioned
+      #   end 
+      # end 
+      # resources :access_logs, only: [:index]
+    end
+  end
   
   #User resources
   devise_for :users, controllers: {
