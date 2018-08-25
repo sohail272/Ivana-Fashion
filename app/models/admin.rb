@@ -4,5 +4,5 @@ class Admin < ApplicationRecord
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  devise :timeoutable, :timeout_in => 60.seconds
+  devise :timeoutable, :timeout_in => 60.minutes
 end
