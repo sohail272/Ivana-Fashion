@@ -9,8 +9,8 @@
             <li>Collections</li>
           </ul>
         </div>
-        <%= form_tag(products_path, method: :get) do %>
           <div class="col-md-3 pull-left" id="sidebar">
+            <%= form_tag(products_path, method: :get) do %>
             <div class="list-group panel">
               <!--product-->
               <div class="panel panel-default sidebar-menu">
@@ -147,8 +147,8 @@
               </div>
             </div>
             <!--colors-->
+            <% end %>
           </div>
-        <% end %>
         <div class="col-md-9 pull-left">
           <div class="box">
             <h1>Collections</h1>
@@ -183,7 +183,7 @@
                     <p class="price"><%=product.price %></p>
                     <p class="buttons">
                       <%=link_to "View detail", product_path(product.id) %>
-                      <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="/home/cart" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                     </p>
                   </div>
                   <!-- /.text -->
